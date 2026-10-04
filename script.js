@@ -327,7 +327,7 @@ async function partagerScore() {
 
   canvas.toBlob(async (blob) => {
     const fichier = new File([blob], 'mon-score-qcm.png', { type: 'image/png' });
-    const message = `J'ai obtenu ${score} / 20 bonnes réponses au QCM Culture Générale ! Mon meilleur score : ${meilleurScore} / 20. Essaie de me battre : https://hed229-1234.github.io/qcm-culture/`;
+    const message = `J'ai obtenu ${score} / 20 bonnes réponses au QCM Culture Générale ! Mon meilleur score : ${meilleurScore} / 20. Essaie de me battre : https://hed229-1234.github.io/qcm-culture-generale/`;
     if (navigator.canShare && navigator.canShare({ files: [fichier] })) {
       try {
         await navigator.share({
